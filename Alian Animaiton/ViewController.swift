@@ -9,7 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var myimageview: UIImageView!
+    @IBOutlet weak var counter: UILabel!
+    
+    var index = 1
+    var direction = 1  // 방향
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -18,7 +24,7 @@ class ViewController: UIViewController {
     @IBAction func update(_ sender: Any) {
         
         /*
-        // 1...5 그다음 1....5 이렇게 진행되는
+        // 1...5 그다음 1....5 이렇게 진행하는 문제
          
          if index == 5 {
          index = 1
@@ -29,7 +35,7 @@ class ViewController: UIViewController {
          counter.text = String(index)
          */
         
-        // 1...5 그다음 5....1 이렇게 진행되는
+        // 1...5 그다음 5....1 이렇게 진행하는 문제
         if index == 5 {
             direction = 0
         }
