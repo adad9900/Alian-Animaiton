@@ -15,11 +15,15 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+    @IBAction func update(_ sender: Any) {
+      
+        if index == 5 {
+            index = 1
+        } else {
+            index = index + 1
+        }
+        myimageview.image = UIImage(named: "frame\(index).png")
+        counter.text = String(index)
+        
+    }    
 }
-
