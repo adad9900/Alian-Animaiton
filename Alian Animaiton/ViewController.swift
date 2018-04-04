@@ -16,7 +16,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func update(_ sender: Any) {
-      
+        
+        /*
         if index == 5 {
             index = 1
         } else {
@@ -24,6 +25,21 @@ class ViewController: UIViewController {
         }
         myimageview.image = UIImage(named: "frame\(index).png")
         counter.text = String(index)
+        */
         
-    }    
+        if index == 5 {
+            direction = 0
+        }
+        else if index == 1{
+            direction = 1
+        }
+        if direction == 1{
+            index += 1;}
+        else if direction == 0{
+            index = index - 1
+        }
+        
+        myimageview.image = UIImage(named: "frame\(index).png")
+        counter.text = String(index)      
+    }
 }
