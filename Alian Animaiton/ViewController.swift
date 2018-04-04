@@ -18,15 +18,18 @@ class ViewController: UIViewController {
     @IBAction func update(_ sender: Any) {
         
         /*
-        if index == 5 {
-            index = 1
-        } else {
-            index = index + 1
-        }
-        myimageview.image = UIImage(named: "frame\(index).png")
-        counter.text = String(index)
-        */
+        // 1...5 그다음 1....5 이렇게 진행되는
+         
+         if index == 5 {
+         index = 1
+         } else {
+         index = index + 1
+         }
+         myimageview.image = UIImage(named: "frame\(index).png")
+         counter.text = String(index)
+         */
         
+        // 1...5 그다음 5....1 이렇게 진행되는
         if index == 5 {
             direction = 0
         }
